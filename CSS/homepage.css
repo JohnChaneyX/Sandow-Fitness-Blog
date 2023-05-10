@@ -1,0 +1,25 @@
+body {
+    display: grid;
+    grid-template-rows: 20vh auto 10vh;
+    grid-template-columns: 10vw 50vw 30vw 10vw;
+    grid-template-areas: "hd hd hd hd"
+    ". main sub ."
+    "ft ft ft ft";
+    grid-gap: 3px;
+}
+
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+}
+
+.subscription {
+    grid-area: sub;
+}
+
+footer {
+    grid-area: ft;
+}
